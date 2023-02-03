@@ -2,6 +2,13 @@ export default class Human {
   constructor(name, currentAge) {
     this.name = name;
     this.currentAge = currentAge
+    this.mercuryAge = 0
+  }
+
+
+  mercury() {
+    let mercuryConversion = parseInt(this.currentAge / 0.24);
+    this.mercuryAge = mercuryConversion
   }
 }
 
