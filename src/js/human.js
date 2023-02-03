@@ -29,6 +29,10 @@ export default class Human {
     let mercuryYearsPassed = parseInt((this.currentAge - previousAge) / 0.24);
     this.mercuryYearsPassed = mercuryYearsPassed
   }
+  mercuryYearsPassedUntil(futureAge) {
+    let mercuryYearsUntil = parseInt((futureAge - this.currentAge) / 0.24);
+    this.mercuryYearsUntil = mercuryYearsUntil
+  }
 
 
   venus() {
