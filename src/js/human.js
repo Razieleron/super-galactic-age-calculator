@@ -50,6 +50,10 @@ export default class Human {
     let venusYearsPassed = parseInt((this.currentAge - previousAge) / 0.62);
     this.venusYearsSince = venusYearsPassed;
   }
+  venusYearsPassedUntil(futureAge) {
+    let venusYearsUntil = parseInt((futureAge - this.currentAge) / 0.62);
+    this.venusYearsUntil = venusYearsUntil
+  }
 
   mars() {
     let marsConversion = parseInt(this.currentAge / 1.88);
