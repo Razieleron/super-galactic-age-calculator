@@ -7,11 +7,17 @@ export default class Human {
     this.marsAge = 0
     this.jupiterAge = 0
     this.yearsPassed = 0
+    this.yearsUntil = 0
   };
 
   earthYearsPassedSince(previousAge) {
     let yearsPassed = parseInt(this.currentAge - previousAge);
     this.yearsPassed = yearsPassed;
+  }
+
+  earthYearsUntil(futureAge) {
+    let yearsUntil = parseInt(futureAge - this.currentAge);
+    this.yearsUntil = yearsUntil;
   }
 
   mercury() {

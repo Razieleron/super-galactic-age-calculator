@@ -17,7 +17,7 @@ describe('Human', () => {
   })
   test('should correctly say how many Earth years until a persons future birthday', () => {
     human.earthYearsUntil(40);
-    expect(human.earthYearsUntil).toEqual(19)
+    expect(human.yearsUntil).toEqual(13)
   })
 
 
