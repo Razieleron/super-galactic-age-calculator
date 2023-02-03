@@ -3,13 +3,18 @@ export default class Human {
     this.name = name;
     this.currentAge = currentAge
     this.mercuryAge = 0
-  }
+    this.venusAge = 0
+  };
 
   mercury() {
     let mercuryConversion = parseInt(this.currentAge / 0.24);
-    this.mercuryAge = mercuryConversion
-  }
+    this.mercuryAge = mercuryConversion;
+  };
 
+  venus() {
+    let venusConversion = parseInt(this.currentAge / 0.62);
+    this.venusAge = venusConversion;
+  };
   
 }
 
