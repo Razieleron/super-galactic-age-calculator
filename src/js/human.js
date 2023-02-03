@@ -5,6 +5,7 @@ export default class Human {
     this.mercuryAge = 0
     this.venusAge = 0
     this.marsAge = 0
+    this.jupiterAge = 0
   };
 
   mercury() {
@@ -20,6 +21,11 @@ export default class Human {
   mars() {
     let marsConversion = parseInt(this.currentAge / 1.88);
     this.marsAge = marsConversion;
+  }
+
+  jupiter() {
+    let jupiterConversion = parseInt(this.currentAge / 11.86);
+    this.jupiterAge = jupiterConversion
   }
 }
 
