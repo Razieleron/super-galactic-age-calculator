@@ -59,6 +59,10 @@ describe('Human', () => {
     human.marsYearsPassedSince(12);
     expect(human.marsYearsSince).toEqual(7)
   })
+  test('should correctly say how many Mars years until a persons future birthday', () => {
+    human.marsYearsPassedUntil(40);
+    expect(human.marsYearsUntil).toEqual(6)
+  })
 
 
 
