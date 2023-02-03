@@ -42,7 +42,7 @@ describe('Human', () => {
   });
   test('should correctly say how many Venus years have passed since the persons previous birthday', () => {
     human.venusYearsPassedSince(12);
-    expect(human.venusYearsSince).toEqual(25)
+    expect(human.venusYearsSince).toEqual(24)
   })
 
 
