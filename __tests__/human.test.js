@@ -12,6 +12,11 @@ describe('Human', () => {
     expect(human.currentAge).toEqual(27);
   });
 
+  test('should correctly say how many Earth years have passed since the persons previous birthday', () => {
+    human.earthYearsPassed(12);
+    expect(human.yearsPassed).toEqual(19);
+  })
+
   test('should correctly set the value of human.mercuryAge based on human.currentAge', () => {
     human.mercury();
     expect(human.mercuryAge).toEqual(112);
