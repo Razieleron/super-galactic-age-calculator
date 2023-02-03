@@ -8,6 +8,7 @@ export default class Human {
     this.jupiterAge = 0
     this.yearsPassed = 0
     this.yearsUntil = 0
+    this.mercuryYearsPassed = 0
   };
 
   earthYearsPassedSince(previousAge) {
@@ -24,9 +25,12 @@ export default class Human {
     let mercuryConversion = parseInt(this.currentAge / 0.24);
     this.mercuryAge = mercuryConversion;
   };
+  mercuryYearsPassedSince(previousAge) {
+    let mercuryYearsPassed = parseInt((this.currentAge - previousAge) / 0.24);
+    this.mercuryYearsPassed = mercuryYearsPassed
+  }
 
 
-  
   venus() {
     let venusConversion = parseInt(this.currentAge / 0.62);
     this.venusAge = venusConversion;
