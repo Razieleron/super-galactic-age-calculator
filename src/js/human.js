@@ -5,12 +5,14 @@ export default class Human {
     this.mercuryAge = 0
   }
 
-
   mercury() {
     let mercuryConversion = parseInt(this.currentAge / 0.24);
     this.mercuryAge = mercuryConversion
   }
+
+  
 }
+
 
 //   checkType() {
 //     if ((this.side1 > (this.side2 + this.side3)) || (this.side2 > (this.side1 + this.side3)) || (this.side3 > (this.side1 + this.side2))) {
