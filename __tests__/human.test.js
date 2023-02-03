@@ -44,6 +44,10 @@ describe('Human', () => {
     human.venusYearsPassedSince(12);
     expect(human.venusYearsSince).toEqual(24)
   })
+  test('should correctly say how many Venus years until a persons future birthday', () => {
+    human.venusYearsPassedUntil(40);
+    expect(human.venusYearsUntil).toEqual(20)
+  })
 
 
 
