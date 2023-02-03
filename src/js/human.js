@@ -15,7 +15,7 @@ export default class Human {
     let venusConversion = parseInt(this.currentAge / 0.62);
     this.venusAge = venusConversion;
   };
-  
+
 }
 
 
