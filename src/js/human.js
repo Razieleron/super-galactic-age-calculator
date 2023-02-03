@@ -63,6 +63,10 @@ export default class Human {
     let marsYearsPassed = parseInt((this.currentAge - previousAge) / 1.88);
     this.marsYearsSince = marsYearsPassed;
   }
+  marsYearsPassedUntil(futureAge) {
+    let marsYearsUntil = parseInt((futureAge - this.currentAge) / 1.88);
+    this.marsYearsUntil = marsYearsUntil
+  }
 
   jupiter() {
     let jupiterConversion = parseInt(this.currentAge / 11.86);
