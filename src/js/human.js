@@ -14,17 +14,19 @@ export default class Human {
     let yearsPassed = parseInt(this.currentAge - previousAge);
     this.yearsPassed = yearsPassed;
   }
-
   earthYearsUntil(futureAge) {
     let yearsUntil = parseInt(futureAge - this.currentAge);
     this.yearsUntil = yearsUntil;
   }
+
 
   mercury() {
     let mercuryConversion = parseInt(this.currentAge / 0.24);
     this.mercuryAge = mercuryConversion;
   };
 
+
+  
   venus() {
     let venusConversion = parseInt(this.currentAge / 0.62);
     this.venusAge = venusConversion;

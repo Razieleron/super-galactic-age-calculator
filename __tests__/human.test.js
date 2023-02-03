@@ -25,6 +25,10 @@ describe('Human', () => {
     human.mercury();
     expect(human.mercuryAge).toEqual(112);
   });
+  test('should correctly say how many Mercury years have passed since the persons previous birthday', () => {
+    human.mercuryYearsPassedSince(12);
+    expect(human.mercuryYearsPassed).toEqual('a bajillion');
+  })
 
 
 
