@@ -2,7 +2,7 @@
 
 #### This Application Calculates your age in various solar years! (Earth, Mercury, Venus, Mars, Jupiter)
 
-#### By Jannon Sielaff(Your Name Here)
+#### By Jannon Sielaff
 
 ## Technologies Used
 
