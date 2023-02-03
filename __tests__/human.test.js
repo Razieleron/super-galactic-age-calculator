@@ -25,5 +25,10 @@ describe('Human', () => {
   test('should correctly set the value of human.marsAge based on human.currentAge', () => {
     human.mars();
     expect(human.marsAge).toEqual(14);
+
+  test('should correctly set the value of human.jupiterAge based on human.currentAge', () => {
+    human.jupiter();
+    expect(human.jupiterAge).toEqual('a bajillion')
+  })
   })
 });
