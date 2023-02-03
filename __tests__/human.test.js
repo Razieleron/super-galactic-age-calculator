@@ -76,6 +76,6 @@ describe('Human', () => {
   })
   test('should correctly say how many Jupiter years until a persons future birthday', () => {
     human.jupiterYearsPassedUntil(80);
-    expect(human.marsYearsUntil).toEqual(4)
+    expect(human.jupiterYearsUntil).toEqual(4)
   })
 });
