@@ -13,7 +13,7 @@ describe('Human', () => {
   });
   test('should correctly say how many Earth years have passed since the persons previous birthday', () => {
     human.earthYearsPassedSince(12);
-    expect(human.yearsPassed).toEqual(15);
+    expect(human.yearsSince).toEqual(15);
   })
   test('should correctly say how many Earth years until a persons future birthday', () => {
     human.earthYearsUntil(40);
@@ -27,7 +27,7 @@ describe('Human', () => {
   });
   test('should correctly say how many Mercury years have passed since the persons previous birthday', () => {
     human.mercuryYearsPassedSince(12);
-    expect(human.mercuryYearsPassed).toEqual(62);
+    expect(human.mercuryYearsSince).toEqual(62);
   })
   test('should correctly say how many Mercury years until a persons future birthday', () => {
     human.mercuryYearsPassedUntil(40);
@@ -40,6 +40,10 @@ describe('Human', () => {
     human.venus();
     expect(human.venusAge).toEqual(43);
   });
+  test('should correctly say how many Venus years have passed since the persons previous birthday', () => {
+    human.venusYearsPassedSince(12);
+    expect(human.venusYearsSince).toEqual(25)
+  })
 
 
 
