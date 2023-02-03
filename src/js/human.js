@@ -9,6 +9,10 @@ export default class Human {
     this.yearsPassed = 0
   };
 
+  earthYearsPassedSince(previousAge) {
+    let yearsPassed = parseInt(this.currentAge - previousAge);
+    this.yearsPassed = yearsPassed;
+  }
 
   mercury() {
     let mercuryConversion = parseInt(this.currentAge / 0.24);
